@@ -6,3 +6,167 @@ Green: #00B172
 White: #FFF
 
 */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	--font-color: 1A1A1A;
+	--green: #00b172;
+	--white: #fff;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar img {
+	width: 200px;
+	height: 60px;
+	padding-left: 2rem;
+}
+
+.navbar a,
+ul {
+	font-size: 1.5rem;
+	display: flex;
+	color: var(--font-color);
+	list-style: none;
+	align-items: center;
+	text-decoration: none;
+	padding: 0 2rem;
+}
+
+.navbar a:hover,
+.navbar a:active {
+	color: green;
+}
+
+main > .hero {
+	background-image: url('../images/landing.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	& > h1 {
+		font-size: 5rem;
+		color: white;
+	}
+
+	& > p {
+		font-size: 1.5rem;
+		font-weight: 300;
+		text-align: center;
+		color: white;
+		max-width: 600px;
+	}
+}
+
+.span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h2 {
+		text-decoration: underline 4px #00b172;
+		font-weight: 500;
+		font-size: 2.5rem;
+		text-underline-offset: 10px;
+	}
+}
+
+.cards {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h3 {
+		font-size: 2rem;
+		font-weight: 800;
+		color: #00b172;
+	}
+
+	p {
+		font-size: 1.2rem;
+		font-weight: 200;
+		padding: 0 12rem;
+		text-align: center;
+		color: var(--font-color);
+	}
+
+	img {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+.hero-section {
+	position: relative;
+	background-color: #00b172;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem 8rem;
+	margin: 5rem 2rem 0 2rem;
+}
+
+.card__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-self: stretch;
+}
+
+.card__container h2 {
+	font-weight: 800;
+	color: white;
+}
+
+.card__container p {
+	font-weight: 200;
+	color: white;
+}
+
+.card__container h3 {
+	margin-top: 0;
+	color: white;
+	font-size: 2rem;
+	font-weight: 400;
+	text-decoration: underline 4px white;
+	text-underline-offset: 10px;
+}
+
+.hero-section__internal {
+	width: 300px;
+}
+
+.img-logo {
+	width: 100px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.img-app {
+	width: 300px;
+}
